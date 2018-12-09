@@ -1,0 +1,32 @@
+body {
+  background-image: url('../images/BurgerKing_WhopperDog18.jpg');
+  /* background-image: url('../images/burger-seamless.jpg'); */
+  background-repeat: repeat;
+  background-size: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Walter Turncoat', cursive;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 0ex;
+  position: relative;
+  overflow: auto;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-form {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+#burgerInput {
+  width: 40%;
+}

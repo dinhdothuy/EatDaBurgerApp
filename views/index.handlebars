@@ -1,0 +1,50 @@
+<h1>Eat-Da-Burger!</h1>
+
+<div class="row">
+
+  <div class="col-sm-5">
+    <h3>Yummy...! Burgers Available To Eat!</h3>
+
+    <ul>
+      {{#each burgers}}
+        {{#if this.devoured}}
+          {{> burgers/burger-block devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+
+    <form class="create-form" action="/" method="POST">
+      <div class="form-group">
+        <button class="btn-primary" type="submit">Add Burger</button>
+      </div> 
+      <div class="form-group">
+        <input type="text" id="burgerInput" name="burger_name" style= "color: black">
+      </div> 
+      {{!-- <p class="form-group">
+        <input type="text" id="burgerInput" name="burger_name" style= "color: black">
+        <button class="btn-primary" type="submit">Add Burger</button>
+      </p>  --}}
+    </form>
+
+  </div>
+
+  <div class="col-sm-2">
+    
+  </div>
+
+  <div class="col-sm-5">
+    <h3>Yes! Woooffff! I have eaten!</h3>
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+</div>
+
+
+ 
+
